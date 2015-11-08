@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Fixed Background Scrolling</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<h1>Fixed Background Scrolling</h1>
+			</header>	
+			<div id="cbp-fbscroller" class="cbp-fbscroller">
+				<nav>
+					<a href="#fbsection1" class="cbp-fbcurrent">Section 1</a>
+					<a href="#fbsection2">Section 2</a>
+					<a href="#fbsection3">Section 3</a>
+					<a href="#fbsection4">Section 4</a>
+					<a href="#fbsection5">Section 5</a>
+				</nav>
+				<section id="fbsection1"></section>
+				<section id="fbsection2"></section>
+				<section id="fbsection3"></section>
+				<section id="fbsection4"></section>
+				<section id="fbsection5"></section>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.debouncedresize.js"></script>
+		<script src="js/cbpFixedScrollLayout.min.js"></script>
+		<script>
+			$(function() {
+				cbpFixedScrollLayout.init();
+			});
+		</script>
+	</body>
+</html>
